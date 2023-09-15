@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -62,3 +63,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# FarmaciaAppLaravel
+Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP con el framework Laravel, MySQL, Bootstrap CSS, HTML y JavaScript. Los datos se manipulan por medio de una Interfaz de programación de aplicaciones API.
+>>>>>>> 7c7c98c30970bea460b42b3a70c049474efd336d
