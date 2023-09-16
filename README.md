@@ -53,18 +53,6 @@ Laravel CLI
 Servidor de base de datos (por ejemplo, MySQL)
 ```
 
-## Requisitos
-
-# Asegúrate de tener instalados los siguientes requisitos antes de comenzar:
-
-```
-# (PHP >= 7.4)
-Composer
-Node.js y npm
-Laravel CLI
-Servidor de base de datos (por ejemplo, MySQL)
-```
-
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
