@@ -23,6 +23,18 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 ### Interfaz de Medicanentos
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/5d47f19c-5487-4d2f-ac0b-8e9cc74435b3)
 
+### Creación de Nuevo Medicamento
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/9c4ff2d8-b047-43c2-b2b9-44509627ffef)
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/37b127cc-2761-4dd9-8df0-35d4f4044727)
+
+### Edición de Nuevo Medicamento
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/6c81ce2e-a733-4791-aad6-7b4291fa50cf)
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/7fae2b04-01b6-4972-8a3b-68e536cf5970)
+
+### Eliminación de Medicamento
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/fc5744a3-0bcd-4c22-bae4-fe1f4ded8e7b)
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/a9411146-81d4-48b2-aacf-6104e1c9cbdc)
+
 ### Interfaz de Ventas
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/cb98e8b1-ba5a-42dc-a37f-fc8f30d4ee5d)
 
