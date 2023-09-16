@@ -37,11 +37,11 @@ class ClienteController extends Controller
     public function store(Request $request)
     {
         $cliente = new Cliente();
-        $cliente->$nombre = $request->nombre;
-        $cliente->$edad = $request->edad;
-        $cliente->$genero = $request->genero;
-        $cliente->$direccion = $request->direccion;
-        $cliente->$correo = $request->correo;
+        $cliente->nombre = $request->nombre;
+        $cliente->edad = $request->edad;
+        $cliente->genero = $request->genero;
+        $cliente->direccion = $request->direccion;
+        $cliente->correo = $request->correo;
 
         $cliente->save();
     }
@@ -78,11 +78,11 @@ class ClienteController extends Controller
     public function update(Request $request)
     {
         $cliente = Cliente::findOrFail($request->id);
-        $cliente->$nombre = $request->nombre;
-        $cliente->$edad = $request->edad;
-        $cliente->$genero = $request->genero;
-        $cliente->$direccion = $request->direccion;
-        $cliente->$correo = $request->correo;
+        $cliente->nombre = $request->nombre;
+        $cliente->edad = $request->edad;
+        $cliente->genero = $request->genero;
+        $cliente->direccion = $request->direccion;
+        $cliente->correo = $request->correo;
 
         $cliente->save();
         return $cliente;

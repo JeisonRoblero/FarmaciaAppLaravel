@@ -37,10 +37,10 @@ class CarritoController extends Controller
     public function store(Request $request)
     {
         $carrito = new Carrito();
-        $carrito->$cantidad = $request->cantidad;
-        $carrito->$subtotal = $request->subtotal;
-        $carrito->$id_medicamento = $request->id_medicamento;
-        $carrito->$id_venta = $request->id_venta;
+        $carrito->cantidad = $request->cantidad;
+        $carrito->subtotal = $request->subtotal;
+        $carrito->id_medicamento = $request->id_medicamento;
+        $carrito->id_venta = $request->id_venta;
 
         $carrito->save();
     }
@@ -77,10 +77,10 @@ class CarritoController extends Controller
     public function update(Request $request)
     {
         $carrito = Carrito::findOrFail($request->id);
-        $carrito->$cantidad = $request->cantidad;
-        $carrito->$subtotal = $request->subtotal;
-        $carrito->$id_medicamento = $request->id_medicamento;
-        $carrito->$id_venta = $request->id_venta;
+        $carrito->cantidad = $request->cantidad;
+        $carrito->subtotal = $request->subtotal;
+        $carrito->id_medicamento = $request->id_medicamento;
+        $carrito->id_venta = $request->id_venta;
         $carrito->save();
 
         return $carrito;

@@ -37,10 +37,10 @@ class VentaController extends Controller
     public function store(Request $request)
     {
         $venta = new Venta();
-        $venta->$fecha_venta = $request->fecha_venta;
-        $venta->$metodo_pago = $request->metodo_pago;
-        $venta->$total = $request->total;
-        $venta->$id_cliente = $request->id_cliente;
+        $venta->fecha_venta = $request->fecha_venta;
+        $venta->metodo_pago = $request->metodo_pago;
+        $venta->total = $request->total;
+        $venta->id_cliente = $request->id_cliente;
 
         $venta->save();
     }
@@ -77,10 +77,10 @@ class VentaController extends Controller
     public function update(Request $request)
     {
         $venta = Venta::findOrFail($request->id);
-        $venta->$fecha_venta = $request->fecha_venta;
-        $venta->$metodo_pago = $request->metodo_pago;
-        $venta->$total = $request->total;
-        $venta->$id_cliente = $request->id_cliente;
+        $venta->fecha_venta = $request->fecha_venta;
+        $venta->metodo_pago = $request->metodo_pago;
+        $venta->total = $request->total;
+        $venta->id_cliente = $request->id_cliente;
         $venta->save();
 
         return $venta;
