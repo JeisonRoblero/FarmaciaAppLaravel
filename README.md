@@ -1,6 +1,8 @@
 # FarmaciaAppLaravel
 Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP con el framework Laravel, MySQL, Bootstrap CSS, HTML y JavaScript. Los datos se manipulan por medio de una Interfaz de programación de aplicaciones API.
 
+#### Puede probar la aplicación web aquí: https://jeisonroblero.github.io/FarmaciaAppLaravel/farmacia-frontend/
+
 ## Capturas de Pantalla App
 ### Página Principal
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/560948ff-85fc-466a-9fe8-e090722759bb)
