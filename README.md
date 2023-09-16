@@ -18,9 +18,14 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/1c0020c6-f55b-4ccb-8f71-53a0d983e58e)
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/9d82c8d3-d950-4179-872c-0a69493fea3d)
 
-### Interfaz de 
+### Interfaz de Medicanentos
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/5d47f19c-5487-4d2f-ac0b-8e9cc74435b3)
 
+### Interfaz de Ventas
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/cb98e8b1-ba5a-42dc-a37f-fc8f30d4ee5d)
 
+### Interfaz de Carritos
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/b397d6b9-3eb5-43cc-b220-6272addc5c1b)
 
 ## Capturas de Pantalla API
 ### Clientes
@@ -48,124 +53,74 @@ Laravel CLI
 Servidor de base de datos (por ejemplo, MySQL)
 ```
 
-[//]: # (FarmaciaAppLaravel)
+# ## Requisitos
 
-[//]: # (FarmaciaAppLaravel es una aplicación web desarrollada en Laravel que permite gestionar un inventario de productos farmacéuticos y realizar ventas de manera eficiente en una farmacia.)
+# Asegúrate de tener instalados los siguientes requisitos antes de comenzar:
 
-[//]: # (## Características)
+```
+# (PHP >= 7.4)
+Composer
+Node.js y npm
+Laravel CLI
+Servidor de base de datos (por ejemplo, MySQL)
+```
 
-[//]: # (- Gestión de productos: Agregar, editar, eliminar y buscar productos en el inventario.)
-[//]: # (- Gestión de categorías: Categorizar productos para una organización eficiente.)
-[//]: # (- Gestión de ventas: Realizar ventas, aplicar descuentos y generar facturas.)
-[//]: # (- Roles de usuario: Diferentes roles de usuario con permisos personalizables.)
-[//]: # (- Autenticación: Registro y inicio de sesión seguros para usuarios.)
+## Instalación
 
-[//]: # (## Requisitos)
+1. Clona este repositorio en tu máquina local:
 
-[//]: # (Asegúrate de tener instalados los siguientes requisitos antes de comenzar:)
+```
+git clone https://github.com/JeisonRoblero/FarmaciaAppLaravel.git
+```
 
-[//]: # (```)
-[//]: # (PHP >= 7.4)
-[//]: # (Composer)
-[//]: # (Node.js y npm)
-[//]: # (Laravel CLI)
-[//]: # (Servidor de base de datos (por ejemplo, MySQL))
-[//]: # (```)
+2. Navega al directorio del proyecto:
 
-[//]: # (## Instalación)
+```
+cd FarmaciaAppLaravel
+```
 
-[//]: # (1. Clona este repositorio en tu máquina local:)
+3. Instala las dependencias de PHP con Composer:
 
-[//]: # (   ```)
-[//]: # (   git clone https://github.com/JeisonRoblero/FarmaciaAppLaravel.git)
-[//]: # (   ```)
+```
+composer install
+```
 
-[//]: # (2. Navega al directorio del proyecto:)
+4. Copia el archivo de configuración de entorno y configura las variables de entorno necesarias:
 
-[//]: # (   ```)
-[//]: # (   cd FarmaciaAppLaravel)
-[//]: # (   ```)
+```
+cp .env.example .env
+```
 
-[//]: # (3. Instala las dependencias de PHP con Composer:)
+5. Genera una nueva clave de aplicación:
 
-[//]: # (   ```)
-[//]: # (   composer install)
-[//]: # (   ```)
+```
+php artisan key:generate
+```
 
-[//]: # (4. Copia el archivo de configuración de entorno y configura las variables de entorno necesarias:)
+6. Configura tu base de datos en el archivo `.env`:
 
-[//]: # (   ```)
-[//]: # (   cp .env.example .env)
-[//]: # (   ```)
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+B_PASSWORD=your_database_password
+```
 
-[//]: # (5. Genera una nueva clave de aplicación:)
+7. Ejecuta las migraciones y las semillas para configurar la base de datos:
 
-[//]: # (   ```)
-[//]: # (   php artisan key:generate)
-[//]: # (   ```)
+```
+php artisan migrate --seed
+```
 
-[//]: # (6. Configura tu base de datos en el archivo `.env`:)
+8. Inicia el servidor de desarrollo:
 
-[//]: # (   ```env)
-[//]: # (   DB_CONNECTION=mysql)
-[//]: # (   DB_HOST=127.0.0.1)
-[//]: # (   DB_PORT=3306)
-[//]: # (   DB_DATABASE=your_database_name)
-[//]: # (   DB_USERNAME=your_database_username)
-[//]: # (   DB_PASSWORD=your_database_password)
-[//]: # (   ```)
+```
+php artisan serve
+```
 
-[//]: # (7. Ejecuta las migraciones y las semillas para configurar la base de datos:)
-
-[//]: # (   ```)
-[//]: # (   php artisan migrate --seed)
-[//]: # (   ```)
-
-[//]: # (8. Inicia el servidor de desarrollo:)
-
-[//]: # (   ```)
-[//]: # (   php artisan serve)
-[//]: # (   ```)
-
-[//]: # (9. Accede a la aplicación en tu navegador: `http://localhost:8000`)
-
-[//]: # (## Uso)
-
-[//]: # (- Inicia sesión con las credenciales predeterminadas o crea una nueva cuenta.)
-[//]: # (- Explora las diferentes funcionalidades de la aplicación, como la gestión de productos, ventas y roles de usuario.)
-[//]: # (- Personaliza la configuración según tus necesidades en el archivo `.env`.)
-
-[//]: # (## Contribución)
-
-[//]: # (Si deseas contribuir a este proyecto, sigue estos pasos:)
-
-[//]: # (1. Haz un fork del repositorio.)
-[//]: # (2. Crea una rama para tu función o corrección de bug: `git checkout -b feature/nueva-funcion` o `git checkout -b bugfix/correccion`.)
-[//]: # (3. Realiza tus cambios y commitea: `git commit -m "Descripción de los cambios"`.)
-[//]: # (4. Sube tus cambios a tu fork: `git push origin feature/nueva-funcion`.)
-[//]: # (5. Abre un Pull Request en el repositorio original.)
-
-[//]: # (## Licencia)
-
-[//]: # (Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.)
-
-[//]: # (## Contacto)
-
-[//]: # (Si tienes preguntas o sugerencias, puedes contactar al autor del proyecto:)
-
-[//]: # (- Nombre: Jeison Roblero)
-[//]: # (- Correo electrónico: tu@email.com)
-
-[//]: # (¡Gracias por usar FarmaciaAppLaravel!)
-
-
-
-
-
-
-
-
-
+9. Accede a la aplicación en tu navegador: `http://localhost:8000`
 
 
 # Info Instalación Laravel
