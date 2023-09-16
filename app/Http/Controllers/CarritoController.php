@@ -76,7 +76,7 @@ class CarritoController extends Controller
      */
     public function update(Request $request)
     {
-        $carrito = Carrito::findOrFail($request->id);
+        $carrito = Carrito::findOrFail($request->id_venta && $request->id_medicamento);
         $carrito->cantidad = $request->cantidad;
         $carrito->subtotal = $request->subtotal;
         $carrito->id_medicamento = $request->id_medicamento;
@@ -94,7 +94,7 @@ class CarritoController extends Controller
      */
     public function destroy(Request $request)
     {
-        $carrito = Carrito::destroy($request->id);
+        $carrito = Carrito::destroy($request->id_venta && $request->id_medicamento);
         return $carrito;
     }
 }

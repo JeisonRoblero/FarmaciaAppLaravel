@@ -39,5 +39,5 @@ Route::delete('/ventas/{id}','App\Http\Controllers\VentaController@destroy'); //
 // Rutas para carritos
 Route::get('/carritos','App\Http\Controllers\CarritoController@index'); //Mostrar todos los registros
 Route::post('/carritos','App\Http\Controllers\CarritoController@store'); //Crear un registro
-Route::put('/carritos/{id}','App\Http\Controllers\CarritoController@update'); //Actualizar un registro
-Route::delete('/carritos/{id}','App\Http\Controllers\CarritoController@destroy'); //Eliminar un registro
+Route::put('/carritos/{id_venta}/{id_medicamento}','App\Http\Controllers\CarritoController@update'); //Actualizar un registro
+Route::delete('/carritos/{id_venta}/{id_medicamento}','App\Http\Controllers\CarritoController@destroy'); //Eliminar un registro

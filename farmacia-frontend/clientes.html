@@ -1,0 +1,331 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>CLIENTES</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/tablas.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    </head>
+    <body>
+      <div id="app">
+        <section class="first-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="text-content">
+                  <h2>CLIENTES</h2>
+                  <div class="line-dec"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       <section>
+          <div class="con_bg">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-5">
+
+                    <form id="request" class="main_form" @submit.prevent="createItem" v-if="showCreateForm">
+                      <div class="row">
+                         <div class="col-md-12 ">
+                            <input class="contacto" placeholder="Nombre" type="type" name="nombre" v-model="fNombre"> 
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contacto" placeholder="Edad" type="number" name="edad" v-model="fEdad"> 
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contacto" placeholder="Genero" type="type" name="genero" v-model="fGenero">                          
+                         </div>
+                         <div class="col-md-12">
+                          <input class="contacto" placeholder="Direccion" type="type" name="direccion" v-model="fDireccion">                          
+                         </div>
+                         <div class="col-md-12">
+                          <input class="contacto" placeholder="Correo" type="email" name="correo" v-model="fCorreo">                          
+                         </div> 
+                         <div class="col-md-12">
+                            <button class="send_btn" type="submit">AGREGAR</button>
+                         </div>
+                      </div>
+                    </form>
+
+                    <form id="request" class="main_form" @submit.prevent="updateItem" v-if="showEditForm">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contacto" placeholder="Nombre" type="type" name="nombre" v-model="fNombre"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contacto" placeholder="Edad" type="number" name="edad" v-model="fEdad"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contacto" placeholder="Genero" type="type" name="genero" v-model="fGenero">                          
+                           </div>
+                           <div class="col-md-12">
+                            <input class="contacto" placeholder="Direccion" type="type" name="direccion" v-model="fDireccion">                          
+                           </div>
+                           <div class="col-md-12">
+                            <input class="contacto" placeholder="Correo" type="email" name="correo" v-model="fCorreo">                          
+                           </div> 
+                           <div class="col-md-12">
+                              <button class="send_btn" type="submit">EDITAR</button>
+                           </div>
+                        </div>
+                    </form>
+
+                     
+                  </div>
+                  <div>
+                    <table id="customers">
+                      <tr>
+                        <th>ID CLIENTE</th>
+                        <th>NOMBRE</th>
+                        <th>EDAD</th>
+                        <th>GENERO</th>
+                        <th>DIRECCION</th>
+                        <th>CORREO</th>
+                        <th>ACCION</th>
+                      </tr>
+                      <tr v-for="item in apiData" :key="item.id">
+                        <td> 
+                          {{ item.id }}
+                        </td>
+                        <td>
+                          {{ item.nombre }}
+                        </td>
+                        <td>
+                          {{ item.edad }}
+                        </td>
+                        <td>
+                          {{ item.genero }}
+                        </td>
+                        <td>
+                          {{ item.direccion }}
+                        </td>
+                        <td>
+                          {{ item.correo }}
+                        </td>
+                        <td class="actions">
+                              <a href="#" class="edit-item" title="Edit" @click="editItem(item.id)">Editar</a>
+                              <a href="#" class="remove-item" title="Remove" @click="deleteItem(item.id)">Eliminar</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  
+        </section> 
+      </div>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul>
+                  <li><a href="https://www.facebook.com/tooplate"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+                <p>Copyright &copy; 2023 ANALISIS | DISEÑO: GERI AND JEICO</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script>
+          new Vue({
+              el: '#app',
+              data: {
+                  apiData: [],
+                  fNombre: '',
+                  fEdad: '',
+                  fGenero: '',
+                  fDireccion: '',
+                  fCorreo: '',
+                  id: null,
+                  showCreateForm: true,
+                  showEditForm: false,
+              },
+              mounted() {
+                  // Realizando una solicitud para obtener datos de la api
+                  this.fetchData();
+              },
+              methods: {
+                fetchData() {
+                  // Realiza una solicitud HTTP para obtener los datos de la API y actualizar apiData
+                  fetch('http://127.0.0.1:8000/api/clientes')
+                    .then(response => response.json())
+                    .then(data => {
+                      this.apiData = data.reverse();
+                    })
+                    .catch(error => {
+                      console.error('Error al obtener datos de la API:', error);
+                    });
+                },
+                createItem() {
+                    // Realiza una solicitud POST para crear el elemento en la API
+                    const createdData = { 
+                                          nombre: this.fNombre,
+                                          edad: this.fEdad,
+                                          genero: this.fGenero,
+                                          direccion: this.fDireccion,
+                                          correo: this.fCorreo,
+                                        };
+
+                    fetch('http://127.0.0.1:8000/api/clientes', {
+                      method: 'POST',
+                      body: JSON.stringify(createdData),
+                      headers: {
+                        'Content-Type': 'application/json'
+                      }
+                    })
+                    .then(response => {
+                      if (response.ok) {
+                        console.log('Elemento creado con éxito');
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Elemento actualizado con éxito',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        this.fetchData(); // Llama a una función para recargar los datos
+                      } else {
+                        console.error('Error al actualizar el elemento');
+                      }
+                    })
+                    .catch(error => {
+                      console.error('Error en la solicitud:', error);
+                    });
+
+                    // Limpia los valores del formulario después de enviar
+                    this.fNombre = '';
+                    this.fEdad = '';
+                    this.fGenero = '';
+                    this.fDireccion = '';
+                    this.fCorreo = '';
+                    this.id = null;
+              
+                },
+                // Al dar clic en el botón editar
+                editItem(itemId) {
+                  const selectedItem = this.apiData.find(item => item.id === itemId);
+                  if (selectedItem) {
+                    this.fNombre = selectedItem.nombre;
+                    this.fEdad = selectedItem.edad;
+                    this.fGenero = selectedItem.genero;
+                    this.fDireccion = selectedItem.direccion;
+                    this.fCorreo = selectedItem.correo;
+                    this.id = selectedItem.id;
+                    this.showCreateForm = false;
+                    this.showEditForm = true;
+                  }
+                },
+                // Al enviar el formulario
+                updateItem() {
+                  if (this.id !== null) {
+                    // Realiza una solicitud PUT para actualizar el elemento en la API
+
+                    const updatedData = { 
+                                          nombre: this.fNombre,
+                                          edad: this.fEdad,
+                                          genero: this.fGenero,
+                                          direccion: this.fDireccion,
+                                          correo: this.fCorreo,
+                                        };
+
+                    fetch(`http://127.0.0.1:8000/api/clientes/${this.id}`, {
+                      method: 'PUT',
+                      body: JSON.stringify(updatedData),
+                      headers: {
+                        'Content-Type': 'application/json'
+                      }
+                    })
+                    .then(response => {
+                      if (response.ok) {
+                        console.log('Elemento actualizado con éxito');
+                        this.fetchData(); // Llama a una función para recargar los datos
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Elemento actualizado con éxito',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                      } else {
+                        console.error('Error al actualizar el elemento');
+                      }
+                    })
+                    .catch(error => {
+                      console.error('Error en la solicitud:', error);
+                    });
+
+                    // Limpia los valores del formulario después de enviar
+                    this.fNombre = '';
+                    this.fEdad = '';
+                    this.fGenero = '';
+                    this.fDireccion = '';
+                    this.fCorreo = '';
+                    this.id = null;
+                    this.showCreateForm = true;
+                    this.showEditForm = false;
+                  }
+                },
+                deleteItem(itemId) {
+                  if (confirm('¿Estás seguro de que deseas eliminar este elemento?')) {
+                      // Realiza una solicitud DELETE a la API para eliminar el elemento
+                      fetch(`http://127.0.0.1:8000/api/clientes/${itemId}`, {
+                        method: 'DELETE'
+                      })
+                      .then(response => {
+                        if (response.ok) {
+                          console.log('Elemento eliminado con éxito');
+                          // Actualiza la lista de datos para reflejar la eliminación
+                          this.fetchData(); // Puedes usar la función fetchData que definiste previamente
+                          Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Elemento eliminado con éxito',
+                            showConfirmButton: false,
+                            timer: 1500
+                          });
+                        } else {
+                          console.error('Error al eliminar el elemento');
+                        }
+                      })
+                      .catch(error => {
+                        console.error('Error en la solicitud:', error);
+                      });
+                    }
+                  },
+                }
+          });
+
+
+          
+      </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

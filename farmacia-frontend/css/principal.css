@@ -1,0 +1,161 @@
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 18px;
+	color: #05070a;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+.primary-button a {
+	text-decoration: none;
+	padding: 10px 18px;
+	display: inline-block;
+	border-radius: 24px;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.first-section {
+	background-image: url(../img/first-section-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 4% 0px 4% 0px;
+}
+
+.first-section .text-content {
+	text-align: right;
+	color: #fff;
+}
+
+.first-section .text-content h2 {
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.first-section .text-content .line-dec {
+	width: 85%;
+	height: 1px;
+	background-color: #fff;
+	margin: 10px 0px 25px auto;
+}
+
+.first-section .text-content span {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+
+/* ======================
+---- SEGUNDA SECCION ------
+=======================*/
+
+.second-section {
+	padding: 45px 0px;
+}
+
+.second-section .service-item {
+	text-align: center;
+	background-color: rgba(96, 109, 136, 0.171);
+	padding: 12px 12px 12px 12px;
+	border-radius: 20px;
+}
+
+.second-section .service-item .icon img {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.second-section h4 {
+	font-size: 18px;
+	color: #002363;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+/* ======================
+----- FOOTER SECTION ----
+=======================*/
+
+footer {
+	text-align: center;
+	background-image: url(../img/footer-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	margin-top: -50px;
+	padding: 11% 0px 4% 0px;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+footer ul li {
+	display: inline-block;
+	margin: 0 3px;
+}
+
+footer ul li a {
+	font-size: 16px;
+	color: #415b90;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+footer ul li a:hover {
+	background-color: #22304d;
+	color: #415b90;
+	transition: all 0.3s;
+}
+
+footer p {
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	color: #fff;
+}
+
+footer em {
+	font-style: normal;
+	font-weight: 600;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #3CF;
+}
+
+footer {
+		margin-top: -50px;
+		padding: 200px 0px 20px 0px;
+}

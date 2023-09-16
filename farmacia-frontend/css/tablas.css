@@ -1,0 +1,209 @@
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 18px;
+	color: #05070a;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+.primary-button a {
+	text-decoration: none;
+	padding: 10px 18px;
+	display: inline-block;
+	border-radius: 24px;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.first-section {
+	background-image: url(../img/first-section-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 2% 0px 2% 0px;
+}
+
+.first-section .text-content {
+	text-align: right;
+	color: #fff;
+}
+
+.first-section .text-content h2 {
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.first-section .text-content .line-dec {
+	width: 18%;
+	height: 1px;
+	background-color: #fff;
+	margin: 10px 0px 25px auto;
+}
+
+.first-section .text-content span {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+/**AGREGAR CLIENTES **/
+.main_form {
+    margin-top: 20px;
+    background: #fffefe;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.main_form .contacto {
+    border: #042136 solid 2px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 50px;
+    background: rgba(133, 132, 132, 0.219);
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 15px;
+}
+
+.send_btn {
+    background: #090527;
+    font-weight: 600;
+    font-size: 20px;
+    width: 250px;
+    color: #fff;
+    height: 50px;
+    margin-top: 10px !important;
+    transition: ease-in all 0.5s;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+.send_btn:hover {
+    background: #2b0d52;
+    transition: ease-in all 0.5s;
+}
+
+#request *::placeholder {
+    color: #525253;
+    opacity: 1;
+}
+
+/*TABLA DE CLIENTES*/
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 57%;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  
+  #customers td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: 550;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1d0a36;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+  }
+
+
+  /*PIE DE PAGINA*/
+footer {
+	text-align: center;
+	background-image: url(../img/footer-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	margin-top: -50px;
+	padding: 11% 0px 4% 0px;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+footer ul li {
+	display: inline-block;
+	margin: 0 3px;
+}
+
+footer ul li a {
+	font-size: 16px;
+	color: #415b90;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+footer ul li a:hover {
+	background-color: #22304d;
+	color: #415b90;
+	transition: all 0.3s;
+}
+
+footer p {
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	color: #fff;
+}
+
+footer em {
+	font-style: normal;
+	font-weight: 600;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #3CF;
+}
+
+footer {
+		margin-top: -50px;
+		padding: 200px 0px 20px 0px;
+}
