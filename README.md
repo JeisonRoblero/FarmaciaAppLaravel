@@ -53,7 +53,7 @@ Laravel CLI
 Servidor de base de datos (por ejemplo, MySQL)
 ```
 
-# ## Requisitos
+## Requisitos
 
 # Asegúrate de tener instalados los siguientes requisitos antes de comenzar:
 
