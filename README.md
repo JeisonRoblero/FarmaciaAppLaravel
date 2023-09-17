@@ -56,7 +56,6 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 ### Creación de Nuevo Carrito
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/7a084352-fad7-4533-8b98-80ce91c578a4)
 
-
 ## Capturas de Pantalla API
 ### Clientes
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/2358aae3-bc4e-461f-9593-bfe38c911373)
