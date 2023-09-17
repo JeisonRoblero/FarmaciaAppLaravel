@@ -4,10 +4,10 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 #### Puede probar la aplicación web aquí: https://jeisonroblero.github.io/FarmaciaAppLaravel/farmacia-frontend/
 
 ## Capturas de Pantalla App
-### Página Principal
+## Página Principal
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/560948ff-85fc-466a-9fe8-e090722759bb)
 
-### Interfaz Clientes
+## Interfaz Clientes
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/c277d2d7-8476-40cd-9587-6dc3d276f55e)
 
 ### Creación de Nuevo Cliente
@@ -20,7 +20,7 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/1c0020c6-f55b-4ccb-8f71-53a0d983e58e)
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/9d82c8d3-d950-4179-872c-0a69493fea3d)
 
-### Interfaz de Medicanentos
+## Interfaz de Medicanentos
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/5d47f19c-5487-4d2f-ac0b-8e9cc74435b3)
 
 ### Creación de Nuevo Medicamento
@@ -35,7 +35,7 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/fc5744a3-0bcd-4c22-bae4-fe1f4ded8e7b)
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/a9411146-81d4-48b2-aacf-6104e1c9cbdc)
 
-### Interfaz de Ventas
+## Interfaz de Ventas
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/cb98e8b1-ba5a-42dc-a37f-fc8f30d4ee5d)
 
 ### Creación de Nueva Venta
@@ -50,7 +50,7 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/c0b74f6b-297f-44dd-9f35-bae642256923)
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/0c2b8a17-9762-4fd9-bb98-4a7020e6d390)
 
-### Interfaz de Carritos
+## Interfaz de Carritos
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/b397d6b9-3eb5-43cc-b220-6272addc5c1b)
 
 ### Creación de Nuevo Carrito
