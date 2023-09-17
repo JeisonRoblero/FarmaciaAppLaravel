@@ -38,8 +38,24 @@ Aplicación web de farmacia (venta de medicamentos a clientes). Creada en PHP co
 ### Interfaz de Ventas
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/cb98e8b1-ba5a-42dc-a37f-fc8f30d4ee5d)
 
+### Creación de Nueva Venta
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/c6a24df8-3672-4fc4-8e6d-9725472fb9b8)
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/14135be3-9c56-421c-91f6-6860b10f13f7)
+
+### Edición de Venta
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/9ae67267-b8aa-41fd-9188-b5278b94bd91)
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/230b9078-8b96-4ed4-a965-fc596d85bd9f)
+
+### Eliminación de Venta
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/c0b74f6b-297f-44dd-9f35-bae642256923)
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/0c2b8a17-9762-4fd9-bb98-4a7020e6d390)
+
 ### Interfaz de Carritos
 ![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/b397d6b9-3eb5-43cc-b220-6272addc5c1b)
+
+### Creación de Nuevo Carrito
+![image](https://github.com/JeisonRoblero/FarmaciaAppLaravel/assets/89631773/7a084352-fad7-4533-8b98-80ce91c578a4)
+
 
 ## Capturas de Pantalla API
 ### Clientes
